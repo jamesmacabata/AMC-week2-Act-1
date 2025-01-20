@@ -1,0 +1,28 @@
+import React from 'react';
+import {Text, StyleSheet} from 'react-native';
+import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
+
+const BoldAndBeautiful = () => (
+  <SafeAreaProvider>
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.baseText}>
+      <Text style={styles.innerText}>I'm James Macabata </Text>  My role in our <Text style={styles.innerText}>system architecture </Text> last semester is i do the documention in our system, i do the <Text style={styles.innerText}>system flowchart and data flow diagram,porpuse of the study and characteristics and processes </Text>. my experience last semester is great because we do as a group on creating our system
+        <Text style={styles.innerText}> </Text>
+      </Text>
+    </SafeAreaView>
+  </SafeAreaProvider>
+);
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  baseText: {
+    fontWeight: 'bold',
+  },
+  innerText: {
+    color: 'red',
+  },
+});
+
+export default BoldAndBeautiful;
