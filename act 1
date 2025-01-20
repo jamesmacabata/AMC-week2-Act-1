@@ -1,0 +1,40 @@
+import React from 'react';
+import {View, Text, Image, ScrollView, TextInput} from 'react-native';
+
+const App = () => {
+  return (
+    <ScrollView>
+      <Text>Some text</Text>
+      <View
+        style={{
+          alignItems:'center'
+        }}>
+      
+        <Text>Bakugo katsuki</Text>
+        <Image
+          source={{
+            uri: 'https://tse4.mm.bing.net/th?id=OIP.TI5cTE-0w8NSZOKxOLpiLQHaM9&rs=1&pid=ImgDetMain',
+          }}
+          style={{width: 150, height: 200}}
+          
+        />
+      </View>
+
+
+
+      <TextInput
+        style={{
+          height: 40,
+          borderColor: 'gray',
+          borderWidth: 2,
+        }}
+        defaultValue="You can type in me"
+      />
+    </ScrollView>
+  );
+};
+
+
+
+export default App;
+
